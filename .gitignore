@@ -1,0 +1,41 @@
+# Virtual environment
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Dataset (biar file besar tidak ke-upload)
+data/*.csv
+data/*.json
+data/*.xlsx
+data/*.parquet
+
+# Model files (besar dan tidak perlu di Git)
+models/*.h5
+models/*.keras
+models/*.ckpt
+models/*.pkl
+
+# Logs
+logs/
+*.log
+
+# TensorFlow checkpoints
+checkpoint/
+*.ckpt
+*.ckpt.*
+
+# Outputs
+*.png
+*.jpg
+
+# System files
+.DS_Store
+Thumbs.db
