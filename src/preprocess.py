@@ -1,6 +1,8 @@
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 
+
+
 def clean_data(df):
     """
     Bersihkan kolom-kolom utama Bitcoin:
@@ -11,6 +13,7 @@ def clean_data(df):
 
     # bersihkan nama kolom dari spasi
     df.columns = df.columns.str.strip()
+
 
     # rename kolom agar konsisten
     df = df.rename(columns={
