@@ -1,3 +1,4 @@
+#ignore this requirement because i dont use this much library for this project
 absl-py==2.3.1
 astunparse==1.6.3
 certifi==2025.11.12
