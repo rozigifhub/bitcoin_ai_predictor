@@ -1,9 +1,9 @@
 import numpy as np
 
-def create_window(data_scaled, window_size=30):
+def create_window(data_normal, window_size=30):
     """
     Membuat window time-series untuk LSTM.
-    Input: data_scaled shape (n, 5)
+    Input: data_normal shape (n, 5)
     - open, high, low, price, volume
 
     Output:
@@ -15,9 +15,9 @@ def create_window(data_scaled, window_size=30):
     y = []
 
     
-    for i in range(window_size, len(data_scaled)):
-        X.append(data_scaled[i - window_size:i])  # 30 hari sebelumnya
-        y.append(data_scaled[i, 3])  # kolom ke-3 = price (Close)
+    for i in range(window_size, len(data_normal)):
+        X.append(data_normal[i - window_size:i])  # 30 hari sebelumnya
+        y.append(data_normal[i, 3])  # kolom ke-3 = price (Close)
 
     X = np.array(X)
     y = np.array(y)
