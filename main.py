@@ -3,6 +3,7 @@ from src.preprocess import clean_data, select_column, normalize_data
 from src.window import create_window
 
 
+
 def main():
     df_raw = load_data("data/bitcoin.csv")
 
