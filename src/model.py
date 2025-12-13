@@ -4,9 +4,9 @@ import numpy as np
 class LSTMNetwork:
     def __init__(self, input_size, hidden_size, output_size):
         """
-        input_size  : jumlah fitur input per time-step(oclv = 5 input)
+        input_size  : jumlah fitur input per time-step(oclhv = 5 input)
         hidden_size : ukuran hidden state
-        output_size : jumlah output (untuk prediksi 1 angka = 1)
+        output_size : jumlah output (untuk prediksi close dimana cuman 1 angka berarti output_size = 1)
         """
 
         self.input_size = input_size

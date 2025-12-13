@@ -1,6 +1,5 @@
 # Virtual environment
 venv/
-env/
 
 # Python cache
 __pycache__/
@@ -40,5 +39,4 @@ checkpoint/
 .DS_Store
 Thumbs.db
 
-# .env
-.env
+
